@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Glory:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-family: 'Glory', sans-serif;
+	font-size: 16px;
+	background: #FFFFFF;
+	text-decoration: none;
+}
+
+.nav {
+    transform: translateX(-120%);
+    transition: transform 0.5s ease-in-out;
+    z-index:1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: rgb(48,126,185);
+    background: linear-gradient(176deg, rgba(48,126,185,1) 0%, rgba(74,191,210,1) 100%);
+    font-size: 1.5em;
+    border-bottom-right-radius: 40px;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 35%);
+}
+
+.nav.active {
+	transform:translateX(0);
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+}
+
+a{
+	text-align:center;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	font-weight: 200;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 10px 40px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.close_button {
+    display: flex;
+    justify-content: left;
+    padding: 20px 20px 8px;
+    font-size: 40px;
+    color: white;
+    font-weight: 200;
+}
+
+.overlay {
+	transform: translateX(-100%);
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.overlay.active {
+	transform: translateX(0);
+	transition: background-color 0.5s ease-in-out;
+	background-color: rgba(0,0,0,.50);
+}
+
+.profile  {
+	transform: translateY(-120%);
+    transition: transform 0.5s ease-in-out;
+	top: 0;
+	right: 0;
+	position: fixed;
+	z-index:0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	background: rgb(48, 126, 185);
+	background: linear-gradient(176deg, rgba(48, 126, 185, 1) 0%,rgba(74, 191, 210, 1) 100%);
+	font-size: 1.5em;
+	border-radius: 0 0 40px 40px;
+	box-shadow: 2px 4px 4px rgb(0 0 0/ 35%);
+}
+
+.profile ul{
+	list-style: none;
+    padding: 10px 40px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.profile.active{
+	transform:translateY(40%);
+	transition: transform 0.5s ease-in-out;
+}
+	

@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+*{
+    font-family: 'Glegoo', serif;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#centraliza{
+    text-align: center;
+    
+}
+
+
+#btn{
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: linear-gradient(to right, #4D84B6, #4EEAE0);
+
+    
+}
+
+.btn{
+    margin-left: 60px;
+}
+
+#nome{
+    border-radius: 50px;
+    
+}
+
+input{
+      box-shadow: 5px 10px 15px #c4c5c7;
+}

@@ -1,0 +1,161 @@
+:root{
+    --accent: white;
+    --bg: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Glory:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: 'Glory';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+text-align: center;
+}
+
+
+.card-holder{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 22rem;
+  background-color: var(--accent);
+  color: black;
+  margin: 2rem auto;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+ 
+  
+
+}
+
+.card__name{
+  font-family: 'Glory';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+text-align: center;
+}
+
+.card__img{
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card-contents{
+  padding: 1rem;
+}
+
+h1{
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+p{
+  margin-bottom: 1rem;
+  color: #000000;
+  font-family: 'Glory';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+}
+
+.card__read-more{
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.card__read-more--open{
+  display: inline-block;
+  opacity: 1;
+  height: 3rem;
+}
+
+.read-more-btn{
+  display: inline-block;
+  color: black;
+  background-color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1em;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius:50px;
+}
+
+.read-more-btn:hover{
+  background-color: white;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+#add{
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    /*background-image: url(download.png);*/
+    
+
+}
+.c4{
+    padding-left: 50px;
+}
+
+#historico{
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+    background: linear-gradient(to right, #4D84B6, #4EEAE0);
+
+    width: 164px;
+   
+
+}
+
+
+#centraliza2
+{
+   
+    padding-left: 85px;
+}
+
+.vlr{
+  font-family: 'Glegoo';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 23px;
+color: rgba(0, 0, 0, 0.61);
+
+text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}

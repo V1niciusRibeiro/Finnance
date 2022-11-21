@@ -1,0 +1,55 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Images/BackgroundGradient_Default.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+	color: white;
+	font-size: 35px;
+	padding: 20px;
+}
+
+
+main{
+	width: 100vw;
+	flex-grow: 1;
+    background-color: #F8F8F8;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.MainBox{
+	display: flex;
+	flex-direction: column;
+	align-items:center; 
+	width: calc(100vw - 30px);
+	min-height: 150px;
+	border-radius: 40px;
+	margin: 10vh auto 0px auto;
+	background-color: white;
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.MainBox_Table{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+th, td{
+	padding: 10px 5px 5px 20px;
+}
+
+.Table_Head{
+	font-size: 25px;
+}
+
+tbody{
+	font-size: 18px;	
+}
+
+

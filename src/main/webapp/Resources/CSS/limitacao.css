@@ -1,0 +1,8 @@
+div, body {
+  display: block;
+}
+@media screen and (min-width: 768px){
+  div, body {
+    display: none;
+  }
+}

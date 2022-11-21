@@ -1,0 +1,238 @@
+
+.Popup{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.Popup_Wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Popup_Content{
+	position: relative;
+	height: 55%;
+	width: calc(100% - 20px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	border-radius: 40px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F8F8F8;
+}
+
+.Popup_Title{
+	font-size: 30px;
+    font-weight: 500;
+	text-align: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.Popup_Close{
+	position: absolute;
+	padding:20px;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: black;
+}
+
+input , select{
+	height: 30px;
+	border-radius: 40px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+	-moz-appearance: textfield;
+	appearance: textfield;	
+}
+
+input:focus , select:focus{
+	border: none;
+	outline: 0;
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Popup_Form{
+	width: 60%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+	flex-grow: 1;
+}
+
+.Popup_Form > fieldset{
+	width: 100%;
+}
+
+.Form_Type{
+	display: flex;
+	justify-content: center;
+}
+
+.Form_Type > input{
+	display: none;
+}
+
+.Form_Type > label:hover , .Input_Disabled{
+    background-color: lightgray;
+    border: none !important;
+    padding: 6px !important;
+}
+
+.Input_Disabled{
+	cursor: not-allowed !important; 
+}
+
+
+.Form_Type > label{
+	padding: 5px;
+	border: solid .5px;
+	border-radius: 12px;
+	margin: 0px 10px;
+	cursor: pointer;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+#MovReceita:checked + label{
+	border: none;
+	color: white;
+    padding: 6px;
+	background-color: #18AB65;
+}
+
+#MovDespesa:checked + label{
+	border: none;
+	color: white;
+    padding: 6px;
+	background-color: #E54E4E;
+}
+
+.Form_Main{
+	display: flex;
+}
+
+.Form_Main > div{
+	display: flex;
+	flex-direction: column;
+}
+
+.Form_Main > div:first-child{
+	width: 60%;
+}
+
+.Form_Main> div:last-child{
+	width: 40%;
+}
+
+
+.Form_Selection{
+	display: flex;
+	flex-direction: column;
+}
+
+.Form_Buttons > input:first-child{
+	background-image: url(../Images/button/ButtonCancel_Background.png);
+}
+
+.Form_Buttons > input:last-child{
+	background-image: url(../Images/button/ButtonSucces_Background.png);
+}
+
+.Form_Buttons > input{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Glory', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	width: 150px;
+	height: 35px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	padding: 0px;
+}
+
+.Form_Buttons{
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 600px){
+
+	.Popup_Form{
+		width: 80%;
+		margin-top: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 450px){
+
+	.Popup_Title{
+		font-size: 25px;
+	}
+	
+	.Popup_Form{
+		width: 90%;
+		margin-top: 10px;
+	    margin-bottom: 20px;
+	}
+	
+	.Form_Main{
+		display: block;
+	}
+	
+	.Form_Main > div:first-child{
+		width: 100%;
+	}
+	
+	.Form_Main> div:last-child{
+		width: 100%;
+	}
+	
+	.Form_Main > div:last-child > label{
+		margin-top: 1vh;
+	}
+	
+	.Form_Buttons > input{
+		font-size: 18px;
+		width: 130px;
+		height: 30px;
+	}
+	
+	input , select{
+	    margin-top: 5px;
+	    margin-right: 0px;
+	}
+
+}
